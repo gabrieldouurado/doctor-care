@@ -1,8 +1,17 @@
 import { Header } from '../../components/Header'
-import { CheckCircle, WhatsappLogo } from 'phosphor-react'
 import {
+  CheckCircle,
+  EnvelopeSimple,
+  MapPin,
+  WhatsappLogo,
+} from 'phosphor-react'
+import {
+  AboutInformations,
+  AboutSection,
   CardsDiv,
   CardsServices,
+  ContactInfos,
+  ContactSection,
   DashboardInformation,
   HomeConainer,
   InformationComponent,
@@ -18,6 +27,9 @@ import {
 } from './styles'
 
 import peopleImage from '../../assets/people.png'
+import familyDoctorImage from '../../assets/family-doctor-image.png'
+import manOnPhone from '../../assets/man-on-phone.png'
+import { Footer } from '../../components/Footer'
 
 export function Home() {
   return (
@@ -100,7 +112,42 @@ export function Home() {
             </CardsServices>
           </CardsDiv>
         </ServiceSection>
+        <AboutSection>
+          <img src={familyDoctorImage} alt="" />
+          <AboutInformations>
+            <div>SOBRE NÓS</div>
+            <span>Entenda quem somos e por que existimos</span>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim. Amet minim mollit non
+            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim. Amet minim mollit non deserunt ullamco est sit
+            aliqua dolor do amet sint. Velit officia consequat duis enim. Amet
+            minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim. Amet minim mollit non deserunt
+            ullamco est sit aliqua dolor do amet sint.
+          </AboutInformations>
+        </AboutSection>
+        <ContactSection>
+          <ContactInfos>
+            <span>Entre em contato com a gente</span>
+            <section>
+              <div>
+                <MapPin size={24} />
+                R. Amauri Souza, 346
+              </div>
+              <div>
+                <EnvelopeSimple size={24} />
+                contato@doctorcare.com
+              </div>
+            </section>
+            <ScheduleButton>
+              <WhatsappLogo size={22} /> AGENDE SUA CONSULTA
+            </ScheduleButton>
+          </ContactInfos>
+          <img src={manOnPhone} alt="" />
+        </ContactSection>
       </HomeConainer>
+      <Footer />
     </>
   )
 }

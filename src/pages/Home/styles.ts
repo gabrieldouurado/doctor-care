@@ -158,6 +158,65 @@ export const CardsServices = styled.div`
   }
 `
 export const AboutSection = styled.div`
-  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  gap: 4.25rem;
+  padding: 10rem 7.75rem;
   background: ${(props) => props.theme['brand-beige']};
+`
+
+export const AboutInformations = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  color: ${(props) => props.theme['gray-paragraph']};
+
+  div {
+    padding-bottom: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: ${(props) => props.theme['brand-green']};
+  }
+
+  span {
+    width: 28rem;
+
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: ${(props) => props.theme['gray-headline']};
+  }
+`
+export const ContactSection = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.25rem;
+  padding: 10rem 7.75rem;
+  background: ${(props) => props.theme.white};
+`
+export const ContactInfos = styled.div`
+  max-width: 25.25rem;
+
+  span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: ${(props) => props.theme['gray-headline']};
+  }
+
+  section {
+    padding: 2.5rem 0;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 1rem;
+
+      color: ${(props) => props.theme['gray-paragraph']};
+
+      svg {
+        color: ${(props) => props.theme['brand-green']};
+      }
+    }
+  }
 `
