@@ -14,6 +14,8 @@ export const PresentationSection = styled.div`
     margin-top: 0.75rem;
     height: 33.75rem;
   }
+
+  flex-wrap: wrap;
 `
 
 export const TextPresentation = styled.div`
@@ -84,6 +86,8 @@ export const DashboardInformation = styled.div`
   background: ${(props) => props.theme['brand-beige']};
   border-radius: 6px;
   border: 1px solid ${(props) => props.theme['brand-green-light']};
+
+  flex-wrap: wrap;
 `
 export const InformationComponent = styled.div`
   display: flex;
@@ -130,6 +134,7 @@ export const ServiceTitles = styled.div`
 
 export const CardsDiv = styled.div`
   display: flex;
+  justify-content: center;
   gap: 2.5rem;
   flex-wrap: wrap;
 `
@@ -163,6 +168,7 @@ export const AboutSection = styled.div`
   gap: 4.25rem;
   padding: 10rem 7.75rem;
   background: ${(props) => props.theme['brand-beige']};
+  flex-wrap: wrap;
 `
 
 export const AboutInformations = styled.div`
@@ -194,6 +200,7 @@ export const ContactSection = styled.div`
   gap: 4.25rem;
   padding: 10rem 7.75rem;
   background: ${(props) => props.theme.white};
+  flex-wrap: wrap;
 `
 export const ContactInfos = styled.div`
   max-width: 25.25rem;
