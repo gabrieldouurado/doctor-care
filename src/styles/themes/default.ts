@@ -6,5 +6,5 @@ export const defaultTheme = {
 
   'gray-headline': '#061800',
   'gray-paragraph': '#384633',
-  white: '3e3e3e',
+  white: '#e3e3e3',
 }
